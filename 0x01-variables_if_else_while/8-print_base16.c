@@ -7,14 +7,14 @@
 
 int main(void)
 {
-	char q;
-	int w;
+	char c;
+	int m;
 
-	for (w = 0; w < 10; w++)
-		putchar(w + '0');
+	for (m = 0; m < 10; m++)
+		putchar(m + '0');
 
-	for (q = 'a'; q <= 'f'; q++)
-		putchar(q)
+	for (c = 'a'; c <= 'f'; c++)
+		putchar(c)
 
 	putchar('\n');
 
