@@ -10,9 +10,16 @@ int main(void)
 	char c;
 
 	for (c = 'a'; c <= 'z'; ++c)
-		putchar(c);
+	{
+		if (c == 'e' || c == 'q')
+			continue;
 
-	printf("\n");
+		putchar(c);
+	}
+
+
+
+	putchar('\n');
 
 	return (0);
 }
