@@ -9,7 +9,7 @@ int main(void)
 {
 	int l;
 
-	for (l = 0; l < 10; ++l)
+	for (l = 0; l < 10; c++)
 	{
 		putchar(l + '0');
 	}
