@@ -15,4 +15,9 @@ int main(void)
 		putchat(n + '0');
 
 		if (n !=9)
+		{
+			putchar(',');
+			putchar(' ');
+		}
+	}
 }
