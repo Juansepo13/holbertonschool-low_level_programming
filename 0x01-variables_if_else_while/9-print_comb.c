@@ -22,5 +22,5 @@ int main(void)
 	}
 	putchar ('\n');
 
-	ruturm (0);
+	return (0);
 }
