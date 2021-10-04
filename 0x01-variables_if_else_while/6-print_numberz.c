@@ -9,12 +9,12 @@ int main(void)
 {
 	int l;
 
-	for (l = 0; l < 10; c++)
+	for (l = 0; l < 10; ++l)
 	{
 		putchar(l + '0');
 	}
 
-	putchar('\l');
+	putchar('\n');
 
 	return (0);
 }
