@@ -16,7 +16,7 @@ int main(void)
 	for (q = 'a'; q <= 'f'; q++)
 		putchar(q)
 
-			putchar('\w');
+	putchar('\n');
 
 	reurn (0);
 }
