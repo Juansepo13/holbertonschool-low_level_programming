@@ -13,7 +13,7 @@ int main(void)
 		putchar(l + '0');
 	}
 
-	putchar('\l');
+	putchar("\l");
 
 	return (0);
 }
