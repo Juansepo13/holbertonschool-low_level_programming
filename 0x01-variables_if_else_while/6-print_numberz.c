@@ -4,6 +4,7 @@
  *
  * Return: return 0
  */
+
 int main(void)
 {
 	int l;
@@ -13,7 +14,7 @@ int main(void)
 		putchar(l + '0');
 	}
 
-	putchar("\l");
+	putchar('\l');
 
 	return (0);
 }
