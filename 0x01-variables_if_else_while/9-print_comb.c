@@ -20,4 +20,7 @@ int main(void)
 			putchar(' ');
 		}
 	}
+	putchar ('\n');
+
+	ruturm (0);
 }
