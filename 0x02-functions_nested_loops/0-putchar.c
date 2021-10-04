@@ -1,5 +1,4 @@
-#include "_putchar.c"
-
+#include <stdio.h>
 
 /**
  * main - Main function use _putchar
@@ -9,5 +8,7 @@
 
 int main(void)
 {
-	_putchar("_putchar";
-		 
+	printf("_putchar\n");
+
+	return (0);
+}
