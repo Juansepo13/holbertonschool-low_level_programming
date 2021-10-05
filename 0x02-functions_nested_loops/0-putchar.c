@@ -1,22 +1,20 @@
 #include "main.h"
 
 /**
- * main - Print _putchar
+ *main - print putchar
  *
- *
- * Return: 0
+ *Return: 0
  */
 
 int main(void)
 {
-	char put[] = "_putchar";
+	char c[] = "_putchar";
 	int i;
 
 	for (i = 0; i <= 7; i++)
 	{
-		_putchar(put[i]);
+		_putchar(c[i]);
 	}
-
 	_putchar('\n');
 
 	return (0);
