@@ -1,6 +1,7 @@
 #include <stdlib.h>
 #include <time.h>
-#include <stdio.h>
+#include <stdio.h>3-print_alphabets.c
+
 
 /**
  * main - Function description
