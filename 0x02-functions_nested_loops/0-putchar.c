@@ -1,14 +1,22 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
- * main - Main function use _putchar
+ * main - Print _putchar
+ *
  *
  * Return: 0
  */
 
 int main(void)
 {
-	printf("_putchar\n");
+	char put[] = "_putchar";
+	int i;
 
-	return (0);
+	for (i = 0; i <= 7; i++)
+	{
+		_putchar(put[i]);
+	}
+
+	_putchar('\n');
+
 }
