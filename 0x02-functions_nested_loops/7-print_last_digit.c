@@ -1,24 +1,24 @@
 #include "main.h"
 /**
- * print_last_digit - Entry Point
- * @a: Variable
- * Return: 0
+ * print_last_digit - print the last digit
+ * @m: Variable
+ * Return: the last digit of the numbers
  */
-int print_last_digit(int a)
+int print_last_digit(int m)
 {
-	a = a % 10;
+	m = m % 10;
 
-	if (a < 0)
+	if (m < 0)
 	{
-		_putchar (-a + '0');
+		_putchar (-m + '0');
 
-		return (-a);
+		return (-m);
 	}
 
 	else
 	{
-		_putchar (a + '0');
+		_putchar (m + '0');
 
-		return (a);
+		return (m);
 	}
 }
