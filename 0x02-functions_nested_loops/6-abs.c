@@ -7,15 +7,15 @@
  *
  * Return: Numer -1, 0, 1
  */
-int _abs(int j)
+int _abs(int x)
 {
-	if (j > 0)
+	if (x > 0)
 	{
-		return (j);
+		return (x);
 	}
 	else
 	{
-		return (j * -1);
+		return (x * -1);
 	}
 	_putchar('\n');
 }
