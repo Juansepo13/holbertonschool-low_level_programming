@@ -1,9 +1,8 @@
 #include "main.h"
 /**
- *
  * _isdigit - check a number between 0 to 9
  * @c: Evalua al caracter
- * Retrun: 1 if c is a Number
+ * Return: 1 if c is a Number
  * 0 otherwise
  */
 
