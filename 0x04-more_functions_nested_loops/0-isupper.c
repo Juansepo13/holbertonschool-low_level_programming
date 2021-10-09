@@ -6,7 +6,7 @@
  * 0 to otherwise
  */
 
-int _isupper(int C)
+int _isupper(int c)
 {
 	int result;
 
