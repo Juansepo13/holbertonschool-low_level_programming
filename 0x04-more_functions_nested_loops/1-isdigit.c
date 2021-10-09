@@ -9,14 +9,15 @@
 
 int _isdigit(int c)
 {
-	int result;
-	if (48 <= c && 57 >= c)
-	{
-		result = 1;
-	}
+int result;
 
-    	else
-		result = 0;
+if (48 <= c && 57 >= c)
+{
+result = 1;
+}
 
-	retrun (result);
+else
+result = 0;
+
+return (result);
 }
