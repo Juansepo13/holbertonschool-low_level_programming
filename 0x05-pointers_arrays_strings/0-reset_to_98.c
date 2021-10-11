@@ -1,8 +1,9 @@
-#ifndef MAIN_H
-#define MAIN_H
-
-#include <stdio.h>
-
-char _putchar();
-void reset_to_98(int *n);
-#endif /* MAIN_H */
+#include "main.h"
+/**
+ * reset_to_98 - using first time pointers- update variable
+ *@n: Pointers
+ */
+void reset_to_98(int *n)
+{
+	*n = 98;
+}
