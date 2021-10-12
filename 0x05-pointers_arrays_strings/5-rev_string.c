@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * rev_string - write one funtion on reverse string
+ * rev_string - Write a function that reverses a string
  * @s: data
  */
 void rev_string(char *s)
@@ -17,6 +17,6 @@ void rev_string(char *s)
 		t = *inicio;
 		*inicio = *s;
 		*s = t;
-		incio++;
+		inicio++;
 	}
 }
