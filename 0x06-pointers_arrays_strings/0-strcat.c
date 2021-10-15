@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * _strcat: funtion that print
+ * _strcat - funtion that print
  * @dest: parameters pointers
  * @src: pointers
  * @e: var final
