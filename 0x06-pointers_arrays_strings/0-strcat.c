@@ -1,8 +1,11 @@
 #include <stdio.h>
 /**
  * _strcat: funtion that print
+ * @dest: parameters pointers
+ * @src: pointers
  * @e: var final
- * Return: always
+ * @n: parameters quantity bytes
+ * Return: dest
  */
 
 char *_strcat(char *dest, char *src)
