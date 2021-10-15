@@ -1,33 +1,28 @@
 #include "main.h"
-#include <stdio.h>
-
 /**
- * _strncat - using pointer
- * @e: var1
- * @j: var2
- * @src: pointer
- * @dest: parameters pointers
- * @n: parameters quantity of butys
- * Return - 0
+ * _strncat - using first time pointers- concat string
+ *@src: Pointers
+ *@dest: Parameters pointers
+ *@n: Parameters quantity of bytes
+*Return: dest
  */
-
 char *_strncat(char *dest, char *src, int n)
 {
-	int e = 0, j = 0;
+	int s = 0, j = 0;
 
-	while (dest[e])
+	while (dest[s])
 	{
-		e++;
+		s++;
 	}
-	while (j < n && src [j])
+
+	while (j < n && src[j])
 	{
-		dest[e* = src[j];
-		     e++;
-		     j++;
-		     }
-
-			dest[e + n + 1] = '\0';
-
-		return (dest);
+		dest[s] = src[j];
+		s++;
+		j++;
 	}
+
+	dest[s + n + 1] = '\0';
+
+	return (dest);
 }
