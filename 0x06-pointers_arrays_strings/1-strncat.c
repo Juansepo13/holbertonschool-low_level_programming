@@ -2,9 +2,12 @@
 #include <stdio.h>
 
 /**
- * main - check code
+ * _strncat - using pointer
  * @e: var1
  * @j: var2
+ * @src: pointer
+ * @dest: parameters pointers
+ * @n: parameters quantity of butys
  * Return - 0
  */
 
