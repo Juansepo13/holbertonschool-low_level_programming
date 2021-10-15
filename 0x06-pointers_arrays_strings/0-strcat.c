@@ -1,27 +1,25 @@
 #include <stdio.h>
 /**
  * _strcat: funtion that print
- * @i: var intial
- * @j: var final
+ * @e: var final
  * Return: always
  */
 
 char *_strcat(char *dest, char *src)
-
 {
-	int i = 0;
-	int j = 0;
+	int e = 0, i;
 
-    while(dest[i] != '\0')
-	    i++;
+	while (dest[e])
+	{
+		e++;
+	}
 
-    while(src[j] != '\0')
+	for (i = 0; src[i] != 0; i++)
+	{
+		dest[e] = src[i];
+		e++;
+	}
 
-    {
-	    dest[i] = src[j];
-	    j++;
-	    i++;
-    }
-    dest[i++] = src[j];
-    return(dest);
+	dest[e] = '\0';
+	return (dest);
 }
