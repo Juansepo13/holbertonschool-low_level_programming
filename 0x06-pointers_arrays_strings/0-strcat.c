@@ -1,32 +1,27 @@
-#include <stdio.h>
-
+#include "main.h"
 /**
- * _strcat - Print sting
- * @dest: char
- * @src: char
- * @e: var final
- * @n: parameters quantity bytes
- * Return: dest
+ * _strcat - using first time pointers- concat string
+ *@src: Pointers
+ *@dest: Parameters pointers
+ *Return: dest
  */
 char *_strcat(char *dest, char *src)
 {
-	int i, j, k;
+	char *concat = dest;
 
-	i = 0;
-	j = 0;
-	k = 0;
-
-	while (src[i] != '\0')
-		i++;
-
-	while (dest[j] != '\0')
-		j++;
-
-	while (k <= i)
+	while (*concat != '\0')
 	{
-		dest[j + k] = src[k];
-		k++;
+		concat++;
+	}
+	while (*src != '\0')
+	{
+		*concat = *src;
+		concat++;
+		src++;
 	}
 
+	*concat = '\0';
+
 	return (dest);
+
 }
