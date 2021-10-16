@@ -1,28 +1,32 @@
 #include <stdio.h>
+
 /**
- * _strcat - funtion that print
- * @dest: parameters pointers
- * @src: pointers
+ * _strcat - Print sting
+ * @dest: char
+ * @src: char
  * @e: var final
  * @n: parameters quantity bytes
  * Return: dest
  */
-
 char *_strcat(char *dest, char *src)
 {
-	int e = 0, i;
+	int i, j, k;
 
-	while (dest[e])
+	i = 0;
+	j = 0;
+	k = 0;
+
+	while (src[i] != '\0')
+		i++;
+
+	while (dest[j] != '\0')
+		j++;
+
+	while (k <= i)
 	{
-		e++;
+		dest[j + k] = src[k];
+		k++;
 	}
 
-	for (i = 0; src[i] != 0; i++)
-	{
-		dest[e] = src[i];
-		e++;
-	}
-
-	dest[e] = '\0';
 	return (dest);
 }
