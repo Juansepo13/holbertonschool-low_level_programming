@@ -2,39 +2,32 @@
 #include <ctype.h>
 
 /**
- * cap_string - Capi
- * @str: char
+ * cap_string - ...
+ * @s: ...
  *
- * Return: char
+ * Return: char value
  */
 
-char *cap_string(char *str)
+char *cap_string(char *s)
 {
-	int i, j, k;
-	char sep[] =  " \t\n,;.!?\"(){}";
+	int a = 0, i;
+	int cspc = 13;
+	char spc[] = {32, '\t', '\n', 44, ';', 46, '!', '?', '"', '(', ')', '{', '}'};
 
-	i = 0;
-	j = 0;
-
-	while (str[i] != '\0')
-		i++;
-	for (j = 0; j <= i; j++)
+	while (s[a])
 	{
-		if (str[j] >= 'A' && str[j] <= 'Z')
-			str[j] = tolower(str[j]);
-	}
-	str[0] = toupper(str[0]);
+		i = 0;
 
-	for (j = 0; j <= i; j++)
-	{
-		for (k = 0; k < 13; k++)
+		while (i < cspc)
 		{
-			if (str[j] == sep[k])
-			{
-				if (str[j + 1] >= 'a' && str[j +1] <= 'z')
-					str[j + 1] = toupper(str[j + 1]);
-			}
+			if ((a == 0 || s[a - 1] == spc[i]) && (s[a] >= 97 && s[a] <= 122))
+				s[a] -= 32;
+
+			i++;
 		}
+
+		a++;
 	}
-	return (str);
+
+	return (s);
 }
