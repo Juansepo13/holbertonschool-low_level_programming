@@ -7,7 +7,6 @@
  *
  * Return: int
  */
-
 int _strcmp(char *s1, char *s2)
 {
 	int i, j, k, l, r;
@@ -27,7 +26,7 @@ int _strcmp(char *s1, char *s2)
 	else
 		k = j;
 
-	for (1 = 0; l < k; l++)
+	for (l = 0; l < k; l++)
 	{
 		r = s1[l] - s2[l];
 
