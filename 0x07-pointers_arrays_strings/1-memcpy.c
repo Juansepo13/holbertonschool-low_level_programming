@@ -10,14 +10,14 @@
  * Return: pointer a char
  */
 
-char *_memcpy(char *dest, char *src, unsigned int n);
-
+char *_memcpy(char *dest, char *src, unsigned int n)
 {
-	unsigned int l;
 
-	for (l = 0; l < n; l++)
+	unsigned int k;
+
+	for (k = 0; k < n; k++)
 	{
-		dest[l] = src[l];
+		dest[k] = src[k];
 	}
 	return (dest);
 }
