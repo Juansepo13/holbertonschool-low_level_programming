@@ -1,9 +1,11 @@
 #include "main.h"
+
 /**
  * _strpbrk - writes the char c to stdout
  * @s: the char to print
  * @accept: the char to print
  * Return: 1
+ * On error, -1.
  */
 
 char *_strpbrk(char *s, char *accept)
