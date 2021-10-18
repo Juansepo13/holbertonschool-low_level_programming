@@ -1,4 +1,5 @@
-gcc -Wall -pedantic -Werror -Wextra -std=gnu89 2-main.c 2-strchr.c -o 2-strchr#include "main.h"
+#include "main.h"
+
 /**
  * _memset - function that fills the first n bytes of memory
  * area pointed to by s with the constant byte b
