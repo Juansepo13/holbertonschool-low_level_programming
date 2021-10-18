@@ -9,19 +9,12 @@ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 2-main.c 2-strchr.c -o 2-strchr#i
  */
 
 	char *_memset(char *s, char b, unsigned int n)
-
 {
+	unsigned int x;
 
-	unsigned int k;
-
-	for (k = 0; k < n; k++)
-
+	for (x = 0; x < n; x++)
 	{
-
-		s[k] = b;
-
+		s[x] = b;
 	}
-
 	return (s);
-
 }
