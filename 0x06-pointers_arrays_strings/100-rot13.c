@@ -2,8 +2,9 @@
 #include <stdio.h>
 
 /**
+ * char *rot13(char *s) - funtion
  * main - check the code
- *
+ * @a: var
  * Return: Always 0.
  **/
 
