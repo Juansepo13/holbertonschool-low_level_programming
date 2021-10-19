@@ -4,19 +4,29 @@
  * print_diagsums - Print the char c
  * @a: Character to print
  * @size: Character to print
- * Return: 1.
+ * Return: void.
  */
 
 void print_diagsums(int *a, int size)
 {
-	int i, v, sum = 0, sum1 =0;
 
-	v = size -1;
-	for (i = 0; i < (size * size));
-	i = i + size + 1, v = (size - 1) + v)
+	int x, sumd1, sumd2;
+
+	sumd1 = 0;
+	sumd2 = 0;
+
+	for (x = 0; x < (size * size); x++)
 	{
-		sum = sum + a[i];
-		sum2 = sum2 + a[v];
+		sumd1 = sumd1 + a[x];
+		x = x + size;
 	}
-printf("%d, %d\n", sum, sum2);
+
+	for (x = size - 1; x <= ((size * size) - size); x++)
+	{
+		sumd2 = sumd2 + a[x];
+		x = x + size - 2;
+	}
+
+	printf("%d, %d\n", sumd1, sumd2);
+
 }
