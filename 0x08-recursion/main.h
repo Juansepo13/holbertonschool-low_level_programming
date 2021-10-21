@@ -1,4 +1,4 @@
- MAIN_H
+#ifndef MAIN_H
 #define MAIN_H
 #include <unistd.h>
 #include <stdio.h>
@@ -16,4 +16,5 @@ int factorial(int n);
 int _pow_recursion(int x, int y);
 /* Write a function that returns the natural square root of a number. */
 int _sqrt_recursion(int n);
+
 #endif /* MAIN_H */
