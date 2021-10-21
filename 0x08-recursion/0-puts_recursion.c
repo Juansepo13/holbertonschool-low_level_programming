@@ -1,9 +1,7 @@
 #include "main.h"
 /**
- * _puts_recursion - Writes the character n
- * @s: string
- *
- * Return: 0
+ * _puts_recursion - Write a function that prints
+ * @s: String char
  */
 
 void _puts_recursion(char *s)
