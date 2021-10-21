@@ -2,6 +2,7 @@
 /**
  * _pow_recursion - Returns the factorial of number
  * @y: factorial
+ * @x: input Number
  * Return: factorial number
  */
 int _pow_recursion(int x, int y)
