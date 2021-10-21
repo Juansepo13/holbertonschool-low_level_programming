@@ -1,36 +1,37 @@
 #include "main.h"
 /**
- * _other_sqrt - Writes the char n.
- * @x: char to print
- * @y: 2char to print
- * Return: 1.
- * error: -1
+ * _sqrt_recursion - print the Square root
+ * @n: char to print
+ * Return: root
  */
 
-int _other_sqrt(int x, int y)
+int _sqrt_recursion(int n)
 {
-	if (x * x == y)
+	int i = 1;
+
+	if (n == 0)
 	{
-		return (x);
+		return (n);
 	}
-	else if (x * x < y)
-	{
-		return (-1);
-	}
-	return (_other_sqrt(x + 1, y)):
+	return (ruot(i, n));
 }
 
 /**
- * _sqrt_recursion - Writes the char n.
- * @n: char to print.
- * Return: 1.
- * error: -1.
+ * ruot - squart
+ * @base: factor
+ * @number: data
+ * Return: squart
  */
-int _sqrt_recursion(int n)
+
+int ruot(int base, int number)
 {
-	if (n == 0)
+	if (base * base == number)
 	{
-		return (0);
+		return (base);
 	}
-	return (_other_sqrt(1, n));
+	if (base * base > number)
+	{
+		return (-1);
+	}
+	return (ruot (base + 1, number));
 }
