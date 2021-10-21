@@ -1,37 +1,40 @@
 #include "main.h"
+
 /**
- * _sqrt_recursion - print the Square root
- * @n: char to print
+ * sqrt2 - Print Square root
+ * @n: Char to print
+ * @i: int
+ *
+ *
+ * Return: integer
+ */
+
+int sqrt2(int n, int i)
+{
+	if (i * i > n)
+	{
+		return (-1);
+	}
+	else if (i * i == n)
+	{
+		return (i);
+	}
+	return (sqrt2(n, i + 1));
+}
+
+/**
+ * _sqrt_recursion - Print the square root
+ * @n: int input
+ *
  * Return: root
  */
 
 int _sqrt_recursion(int n)
 {
-	int i = 1;
-
-	if (n == 0)
-	{
-		return (n);
-	}
-	return (ruot(i, n));
-}
-
-/**
- * ruot - squart
- * @base: factor
- * @number: data
- * Return: squart
- */
-
-int ruot(int base, int number)
-{
-	if (base * base == number)
-	{
-		return (base);
-	}
-	if (base * base > number)
+	if (n < 0)
 	{
 		return (-1);
 	}
-	return (ruot (base + 1, number));
+
+	return (sqrt2(n, 1));
 }
