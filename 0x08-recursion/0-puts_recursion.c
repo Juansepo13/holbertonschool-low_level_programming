@@ -1,18 +1,18 @@
 #include "main.h"
 /**
  * _puts_recursion - Writes the character n
- * @c: string
+ * @s: string
  *
  * Return: 0
  */
-void _puts_recursion(char *c)
+void _puts_recursion(char *s)
 {
-	if (*c != '\0')
+	if (*s != '\0')
 	{
-		_putchar(*c);
-		_putchar_recursion(c + 1);
+		_putchar(*s);
+		_putchar_recursion(s + 1);
 	}
-	if (*c == '\0')
+	if (*s == '\0')
 	{
 		_putchar(10);
 	}
