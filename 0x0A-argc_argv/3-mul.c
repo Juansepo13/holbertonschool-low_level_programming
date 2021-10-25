@@ -1,21 +1,24 @@
-#include "main.h"
+#include <stdio.h>
+#include <stdlib.h>
 /**
- *main: program that multiplies two arguments
- *@argc: long array
- *@argv: array
- * Return: correct 0 / 1 error
+ * main - program that multiplies two arguments
+ * @argc: number of arguments
+ * @argv: arguments supplied
+ * Return: 1 to pass otherwise 0.
  */
-
-int main(int argc, char *argv[])
+int main(int argc, char **argv)
 {
-	int i;
+	int a = 0, b = 0;
 
-	if (argc != 3)
+	if (argc > 2)
+	{
+		a = atoi(argv[1]);
+		b = atoi(argv[2]);
+		printf("%d\n", a * b);
+	}
+	else
 	{
 		printf("Error\n");
-		return (1);
 	}
-	i = atoi(argv[1]) * atoi(argv[2]);
-	printf("%d\n", i);
 	return (0);
 }
