@@ -1,51 +1,55 @@
 #include "main.h"
-#include <ctype.h>
+#include <stdio.h>
+#include <stdlib.h>
+
 /**
- *main: Program that adds the arguments
- *@argc: lon array
- *@argv:array
- * Return: correct 0s or 1 erro
+ * main - print the name of the program
+ *
+ * @argc: int
+ * @argv: char
+ *
+ * Return: 0
  */
 
 int main(int argc, char *argv[])
 {
-	int coins;
-	int i;
+	int i, coins, cents;
+	int denom[5] = {25, 10, 5, 2, 1};
 
-	if (argc != 2)
+	coins = 0;
+
+	if (argc == 2)
+	{
+		if (atoi(argv[1]) <= 0)
+			printf("%d\n", 0);
+		else
+		{
+			cents = atoi(argv[1]);
+
+			for (i = 0; i < 5; i++)
+			{
+				if (cents >= denom[i])
+				{
+					if (cents % denom[i] == 0)
+					{
+						coins +=  cents / denom[i];
+						printf("%d\n", coins);
+						return (0);
+					}
+					else
+					{
+						coins += cents / denom[i];
+						cents = cents % denom[i];
+					}
+				}
+			}
+		}
+	}
+
+	else
 	{
 		printf("Error\n");
 		return (1);
 	}
-	coins = atoi(argv[1]);
-	if (coins < 0)
-	{
-		printf("0\n");
-		return (0);
-	}
-	for (i = 0; coins > 0; i++)
-	{
-		if (coins >= 25)
-		{
-			coins = coins - 25;
-		}
-		else if (coins >= 10)
-		{
-			coins = coins - 10;
-		}
-		else if (coins >= 5)
-		{
-			coins = coins - 5;
-		}
-		else if (coins >= 2)
-		{
-			coins = coins - 2;
-		}
-		else if (coins >= 1)
-		{
-			coins = coins - 1;
-		}
-	}
-	printf("%d\n", i);
 	return (0);
 }
