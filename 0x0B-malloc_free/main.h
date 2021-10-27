@@ -6,5 +6,7 @@ char *create_array(unsigned int size, char c);
 char *_strdup(char *str);
 /* Write a function that concatenates two strings */
 char *str_concat(char *s1, char *s2);
+/* Write a function that returns a pointer to a 2 dimensional array of integers. */
+int **alloc_grid(int width, int height);
 
 #endif
