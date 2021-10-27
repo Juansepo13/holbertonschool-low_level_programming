@@ -8,5 +8,7 @@ char *_strdup(char *str);
 char *str_concat(char *s1, char *s2);
 /* Write a function that returns a pointer to a 2 dimensional array of integers. */
 int **alloc_grid(int width, int height);
+/* Write a function that frees a 2 dimensional grid previously created by your alloc_grid function. */
+void free_grid(int **grid, int height);
 
 #endif
