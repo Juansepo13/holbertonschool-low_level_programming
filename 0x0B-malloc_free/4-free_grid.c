@@ -4,9 +4,10 @@
 /**
  * free_grid - free array
  * @grid: array
- * @heigth: Var
+ * @height: Var
  * Return: nothing
  */
+
 void free_grid(int **grid, int height)
 {
 	int a;
