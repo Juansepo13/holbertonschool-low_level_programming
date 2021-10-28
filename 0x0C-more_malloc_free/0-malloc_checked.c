@@ -14,7 +14,7 @@ void *malloc_checked(unsigned int b)
 {
 	unsigned int *mem;
 
-	men = malloc(w);
+	mem = malloc(w);
 	if (mem == NULL)
 		exit(98);
 
