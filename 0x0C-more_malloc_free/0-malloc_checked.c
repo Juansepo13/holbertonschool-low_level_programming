@@ -5,12 +5,12 @@
 
 /**
  * malloc_checked - Function that allocates memory
- * @w: int to the function
+ * @b: int to the function
  *
  * Return: Pointer
  */
 
-void *malloc_checked(unsigned int w)
+void *malloc_checked(unsigned int b)
 {
 	unsigned int *mem;
 
