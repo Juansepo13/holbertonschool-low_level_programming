@@ -1,52 +1,52 @@
 #include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
-
+#include <limits.h>
 /**
- * string_nconcat - function that concatenates 2 strings
- * @s1: string1
- * @s2: string2
- * @n: bytes to s2 copied
+ * string_nconcat - a function that concactenates two strings
+ *@s1: String1
+ *@s2: String2
+ *@n: int
  *
- * Return: Pointer
+ * Return: Char
  */
-
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-        char *s;
-	int len1, i, k;
-	unsigned int j, len2;
+	unsigned int leng1 = 0;
+	unsigned int leng2 = 0;
+	char *newstring;
+	unsigned int size1;
+	unsigned int size2;
 
-	k = 0;
+	if (s1 != NULL)
+		for (leng1 = 0; s1[leng1] != '\0'; leng1++)
+			;
 
-	if (s1 == NULL)
-	{
-		s1 = malloc(sizeof(*s) * 1);
-		*s1 = '\0';
-	}
-	if (s2 == NULL)
-	{
-		s2 = malloc(sizeof(*s) * 1);
-		*s2 = '\0';
-	}
 
-	len1 = strlen(s1);
-	len2 = strlen(s2);
-	if (n >= len2)
-		n = len2;
+	if (s2 != NULL)
+		for (leng2 = 0; s2[leng2] != '\0'; leng2++)
+			;
 
-	s = malloc(sizeof(char) + 1 * (len1 + n));
+	if (n >= leng2)
+		n = leng2;
 
-	if (s == NULL)
+	newstring = malloc((leng1 + n + 1) * sizeof(char));
+	if (newstring == NULL)
 		return (NULL);
-	for (i = 0; i < len1; i++)
-		s[i] = s1[i];
-	for (j = i; j < (len1 + n); j++)
+
+	for (size1 = 0, size2 = 0; size2 < leng1; size1++, size2++)
 	{
-		s[j] = s2[k];
-		k++;
+		newstring[size1] = s1[size2];
 	}
-	s[j] = '\0';
-	return (s);
+
+	for (size2 = 0; size2 < n; size1++, size2++)
+	{
+		newstring[size1] = s2[size2];
+	}
+
+	newstring[size1] = '\0';
+
+	return (newstring);
+
+
 }
