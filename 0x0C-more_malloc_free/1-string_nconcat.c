@@ -14,41 +14,39 @@
 
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-        char *fifi = NULL;
-	unsigned int i, c, d;
+        char *s;
+	int len1, i, k;
+	unsigned int j, len2;
 
-	if (s1 == '\0')
-	{
-		s1 = "";
-	}
-	if (s2 == '\0')
-	{
-		s2 = "";
-	}
-	for (c = 0; s1[c] != '\0'; c++)
-	{
-	}
-	for (d = 0; s2[d] != '\0'; d++)
-	{
-	}
-	if (n >= d)
-	{
-		n = d;
-	}
-	fifi = malloc((c + n + 1) * sizeof(char));
+	k = 0;
 
-	if (fifi == NULL)
+	if (s1 == NULL)
 	{
+		s1 = malloc(sizeof(*s) * 1);
+		*s1 = '\0';
+	}
+	if (s2 == NULL)
+	{
+		s2 = malloc(sizeof(*s) * 1);
+		*s2 = '\0';
+	}
+
+	len1 = strlen(s1);
+	len2 = strlen(s2);
+	if (n >= len2)
+		n = len2;
+
+	s = malloc(sizeof(char) + 1 * (len1 + n));
+
+	if (s == NULL)
 		return (NULL);
-	}
-	for (i = 0; s1[i] != '\0'; i++)
+	for (i = 0; i < len1; i++)
+		s[i] = s1[i];
+	for (j = i; j < (len1 + n); j++)
 	{
-		fifi[i] = s1[i];
+		s[j] = s2[k];
+		k++;
 	}
-	for (i = 0; i < n; i++)
-	{
-		fifi[c + i] = s2[i];
-	}
-	fifi[c + n] = '\0';
-	return (fifi);
+	s[j] = '\0';
+	return (s);
 }
