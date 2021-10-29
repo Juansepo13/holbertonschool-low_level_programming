@@ -8,5 +8,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n);
 void *_calloc(unsigned int nmemb, unsigned int size);
 /* Write a function that creates an array of integers. */
 int *array_range(int min, int max);
+/* Write a function that reallocates a memory block using malloc and freeWrite a function that reallocates a memory block using malloc and free */
+void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size);
 
 #endif
