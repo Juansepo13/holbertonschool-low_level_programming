@@ -1,5 +1,4 @@
 #include "main.h"
-
 /**
  * print_times_table - Print the 'n' times table, stating with zero.
  * @n: Var of value, how large the times tbale should be
@@ -8,43 +7,44 @@
  */
 void print_times_table(int n)
 {
-	if (n < 16 && n > -1)
-	{
-		int column, row, sum, h, t, o;
+	int r, c, m, d1, d2, d3;
 
-		column = 0;
-		while (column <= n)
+	if (n <= 15 && n >= 0)
+	{
+		for (r = 0; r <= n; r++)
 		{
-			_putchar('0');
-			row = 1;
-			while (row <= n)
+			for (c = 0; c <= n; c++)
 			{
-				sum = column *row;
-				h = sum / 100, t = sum / 10 % 10, o = sum % 10;
-				_putchar(',');
-				_putchar(' ');
-				if (sum > 99)
+				m = r * c;
+				d1 = m / 100; /*primer digito de 3*/
+				d2 = (m / 10) % 10; /* 2 digito de 3 */
+				d3 = m % 10; /* ultimo digito */
+
+				if (m == d3)
+					_putchar(m + '0');
+
+				else if ((m % 100) == 0 )
 				{
-					_putchar(h + '0');
-					_putchar(t + '0');
-					_putchar(o + '0');
-				}
-				else if (sum < 10)
-				{
-					_putchar(' ');
-					_putchar(' ');
-					_putchar(o + '0');
+					_putchar((m / 10) + '0');
+					_putchar(d3 + '0');
 				}
 				else
 				{
-					_putchar(' ');
-					_putchar(t + '0');
-					_putchar(o + '0');
+					_putchar(d1 + '0');
+					_putchar(d2 + '0');
+					_putchar(d3 + '0');
 				}
-				row++;
+				if (c < n)
+				{
+					_putchar(',');
+					_putchar(' ');
+					_putchar(' ');
+					if ((r * (c + 1)) < 10)
+						_putchar(' ');
+				}
 			}
 			_putchar('\n');
-			column++;
 		}
 	}
+
 }
