@@ -12,6 +12,7 @@ Cohort 16.
 ### More Info
 Please use this data structure for this project:
 
+```
 /**
  * struct listint_s - singly linked list
  * @n: integer
@@ -26,6 +27,7 @@ Please use this data structure for this project:
    struct listint_s *next;
    } listint_t;
 ```
+
 ## Files included
 
 | File                 | Details                                    |
@@ -41,5 +43,3 @@ Please use this data structure for this project:
 *Holberton School Student*
 
 Juan Sebastian Posada  - [Github](https://github.com/Juansepo13) - [Twiter](https://twitter.com/@JuanSeb35904130)
-
-# :happy: :monkey: :ball:
