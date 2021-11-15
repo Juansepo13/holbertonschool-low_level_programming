@@ -50,6 +50,6 @@ Please use this data structure for this project:
 
 Author
 ```
-* Juan Posada @JuanSeb35904130** - [JuanPosada](https://github.com/Juansepo13)
+**Juan Posada @JuanSeb35904130** - [JuanPosada](https://github.com/Juansepo13)
 @JuanSeb35904130
 ```
