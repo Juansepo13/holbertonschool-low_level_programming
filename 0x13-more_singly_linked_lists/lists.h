@@ -28,6 +28,8 @@ listint_t *add_nodeint(listint_t **head, const int n);
 listint_t *add_nodeint_end(listint_t **head, const int n);
 /* Write a function that frees a listint_t list */
 void free_listint(listint_t *head);
+/* Write a function that frees a listint_t list. */
+void free_listint2(listint_t **head);
 /* Write a function that deletes the head node of a listint_t linked list, */
 /* and returns the head node’s data (n).  */
 int pop_listint(listint_t **head);
