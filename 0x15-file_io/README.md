@@ -1,4 +1,4 @@
-#0x15. C - File I/O
+# 0x15. C - File I/O
 ***
 ## This is a README.md for the repository 0x15. C - File I/O
 ```
