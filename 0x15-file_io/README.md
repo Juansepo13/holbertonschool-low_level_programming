@@ -61,11 +61,10 @@ int main(int ac, char **av)
 
 | File                 | Details                                    |
 |--------------------- | ------------------------------------------ |
-| [1-create_file.c](./a) |	       | Create a function that creates a file.     |
-| [2-append_text_to_file.c](./b) |	       | Write a function that appends text at the end of file|
+| [1-create_file.c](./a) | Create a function that creates a file.     |
+| [2-append_text_to_file.c](./b) | Write a function that appends text at the end of file|
 | [3-cp.c](./c) |	       | Write a program that copies the content of a file to another file.
-
-Usage: cp file_from file_to|
+Usage: cp file_from file_to.|
 | [](./)  |	       |
 | [](./)  |	       |
 
