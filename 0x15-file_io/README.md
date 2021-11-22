@@ -22,6 +22,7 @@ Read or watch:
 
 * [File descriptors](https://en.wikipedia.org/wiki/File_descriptor)
 * [C Programming in Linux Tutorial #024 - open() read() write() Functions man or help:](https://www.youtube.com/watch?v=dP3N8g7h8gY)
+* [Macros](https://gcc.gnu.org/onlinedocs/gcc-3.1.1/cpp/Object-like-Macros.html)
 * open.
 * close.
 * read.
