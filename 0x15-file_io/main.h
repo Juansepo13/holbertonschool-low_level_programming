@@ -5,9 +5,12 @@
 #include <stdlib.h>
 #include <stdio.h>
 
-#include <sys/types.h>
-#include <sys/stat.h>
-#include <fcntl.h>
+#include <sys/types.h> /* header shall include definitions for at least the*/
+/*following types, blkcnt_t, clock_t,fsblkcnt_t,pthread_barrier_t*/
+#include <sys/stat.h> /*  header defines the structure of the data returned*/
+/*by the functions fstat(), lstat(), and stat().*/
+#include <fcntl.h> /*  header shall define the following requests and */
+/*arguments for use by the functions fcntl() and open().*/
 #include <unistd.h>
 
 #define BUFFER_SIZE 1024
