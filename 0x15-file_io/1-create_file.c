@@ -10,19 +10,33 @@
 
 int create_file(const char *filename, char *text_content)
 {
-	int file, a, READVAL; /*READVAL = Read value */
+	int file_open, file_write, i;
 
 	if (!filename)
+	{
 		return (-1);
-	file = open(filename, O_RDWR | O_CREAT | O_TRUNC, 0600); /* open file */
-	if (file < 0)
-		return (-1);
+	}
 
-	while (text_content && *(text_content + READVAL))
-		READVAL++;
-	a = write(file, text_content, READVAL);
-	close(file);
-	if (a < 0)
+	file_open = open(filename, O_CREAT | O_WRONLY | O_TRUNC, S_IRUSR | S_IWUSR);
+	if (file_open == -1)
+	{
 		return (-1);
+	}
+
+	if (text_content)
+	{
+		i = 0;
+		while (text_content[i] != '\0')
+		{
+			i++;
+		}
+
+		file_write = write(file_open, text_content, i);
+		if (file_write == -1)
+		{
+			return (-1);
+		}
+	}
+	close(file_open);
 	return (1);
 }

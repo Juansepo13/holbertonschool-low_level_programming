@@ -4,6 +4,8 @@
 
 /**
  * main - check the code
+ *@av: Pointer.
+ *@ac: Character.
  *
  * Return: Always 0.
  */
