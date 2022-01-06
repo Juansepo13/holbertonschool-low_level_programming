@@ -1,31 +1,31 @@
-#include "main.h"
-/**
- * print_square- Prints a square whit #
- * @size: Size of the square
- * Return: Square when size is greater than o
- * otherwise New line
- */
+#include "holberton.h"
 
+/**
+ *print_square - Prints a square
+ *@size: Parameter
+ *
+ *Return: 0 or none
+ */
 void print_square(int size)
 {
-int a = '#';
-int b, c;
+	int n;
+	int i;
+	int j;
 
-b = 1;
-while (b <= size)
-{
-for (c = 1; c <= size; c++)
-{
-_putchar(a);
-}
-
-if (b < size)
-{
-_putchar('\n');
-}
-
-b++;
-}
-
-_putchar('\n');
+	n = size;
+	if (n >= 1)
+	{
+		for (i = 0 ; i < n ; i++)
+		{
+			for (j = 0 ; j < n; j++)
+			{
+				_putchar('#');
+			}
+			_putchar('\n');
+		}
+	}
+	if (n < 1)
+	{
+		_putchar('\n');
+	}
 }
