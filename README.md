@@ -1,14 +1,12 @@
+## This is a README.md for the repository for LOW LEVEL
+```
+For Holberton School
+Cohort 16.
 ██       ██████  ██     ██     ██      ███████ ██    ██ ███████ ██ 
 ██      ██    ██ ██     ██     ██      ██      ██    ██ ██      ██ 
 ██      ██    ██ ██  █  ██     ██      █████   ██    ██ █████   ██ 
 ██      ██    ██ ██ ███ ██     ██      ██       ██  ██  ██      ██ 
 ███████  ██████   ███ ███      ███████ ███████   ████   ███████ ███████ 
-
-***
-## This is a README.md for the repository
-```
-For Holberton School
-Cohort 16.
 ```
 ### General
 *
