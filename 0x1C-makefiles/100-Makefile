@@ -1,0 +1,20 @@
+# make -f 100-Makefile
+NAME = school
+# SRC
+SRC = main.c school.c
+# Deps
+CC = gcc
+CFLAGS = -Wall -Werror - Wextra -pendantic
+# Deps Compilation
+OBJ = $(SRC:%.c=%.o)
+# Main Compilation
+all: m.h $(OBJ)
+	$(CC) $(OBJ) -o $(NAME)
+clean:
+	$(RM) *~ $(NAME)
+oclean:
+	$(RM) $(OBJ)
+fclean:	cllean oclean
+re:	oclean all
+# PhonyPhonyPhonyTriplePhony
+.PHONY: clean oclean fclean re
