@@ -13,8 +13,8 @@ Cohort 16.
 
 ### More Info
 
-* ##  Low-level programming & Algorithm
-* ### Low-level programming & Algorithm - Hatching out
+* ##  *Low-level programming & Algorithm*
+* ### *Low-level programming & Algorithm - Hatching out*
 * 212 0x00. C - Hello, World [Sep 30 21...Oct 1 21] - 132.97%
 * 213 0x01. C - Variables, if, else, while [Oct 1 21...Oct 2 21] - 97.5%
 * 214 0x02. C - Functions, nested loops [Oct 4 21...Oct 6 21] - 93.72%
@@ -37,7 +37,7 @@ Cohort 16.
 * 242 0x18. C - Dynamic libraries [Jan 10 22...Jan 11 22] - 63.27%
 * 273 0x1C. C - Makefiles [Mar 21 22...Mar 22 22] - 165.0%
 
-* ### Low-level programming & Algorithm - Data structures and Algorithms
+* ### *Low-level programming & Algorithm - Data structures and Algorithms*
 * 229 0x12. C - Singly linked lists [Nov 11 21...Nov 12 21] - 180.7%
 * 230 0x13. C - More singly linked lists [Nov 15 21...Nov 17 21] - 89.89%
 * 240 0x17. C - Doubly linked lists [Jan 6 22...Jan 7 22] - 143.75%
@@ -47,7 +47,7 @@ Cohort 16.
 * 270 0x1D. C - Binary trees [Mar 21 22...Mar 25 22] - 94.9%
 * 295 0x1E. C - Search Algorithms [Jun 10 22...Jun 13 22] - 68.73%
 
-* ## Low-level programming & Algorithm - Linux and Unix system programming
+* ## *Low-level programming & Algorithm - Linux and Unix system programming*
 * 234 0x15. C - File I/O [Nov 22 21...Nov 24 21] - 100.0%
 * 235 0x16. C - Simple Shell [Nov 25 21...Dec 9 21] - 62.76%
 
